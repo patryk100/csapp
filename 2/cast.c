@@ -18,6 +18,14 @@ int main() {
   int ival = 12345;
   float fval = (float)ival;
   int *pval = &ival;
+  int val = 0x87654321;
+
+  printf("Examing bytes: \n");
+  byte_pointer valp = (byte_pointer)&val;
+  show_bytes(valp, 1);
+  show_bytes(valp, 2);
+  show_bytes(valp, 3);
+  show_bytes(valp, 4);
 
   printf("ival: %d\n", ival);
   printf("Int representation:\n");
